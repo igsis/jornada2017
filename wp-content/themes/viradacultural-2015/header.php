@@ -140,10 +140,8 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                     $blog_link = function_exists('get_the_posts_home_url') ? get_the_posts_home_url() : get_category_link( $blog_id );
                 ?>
                 <ul id="main-menu" class="nav">
-                    <li><a class="a-virada" href="<?php bloginfo( 'url' ); ?>/a-jornada" title="A Jornada"><span>A Jornada</span></a></li>
-                   <?php if (mostrar_programacao()): ?>
-                    <li><a class="programacao" href="<?php bloginfo( 'url' ); ?>/programacao/" title="Programação"><span>Programação</span></a></li><!--  -->
-                    <?php endif; ?>
+                    <li><a class="a-virada" href="<?php bloginfo( 'url' ); ?>/a-jornada" title="A Jornada"><span>A Jornada 2017</span></a></li>
+                   
                     <li><a class="noticias" href="<?php echo get_post_type_archive_link( 'noticias' ); ?>" title="Notícias"><span>Notícias</span></a></li>
                     <?php /*
                     <li><a class="blog" href="<?php echo esc_url( $blog_link ); ?>" title="Blog"><span>Blog</span></a></li>
@@ -156,52 +154,16 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                        <!-- <li><a class="minha-virada" href="<?php bloginfo( 'url' ); ?>/minha-virada/" title="Minha Virada"><span>Minha Virada</span></a></li> -->
 
                     <?php endif; ?>
-                   <li><a class="mapa" href="<?php bloginfo( 'url' ); ?>/mapa-centro/" title="Mapa de Serviços"><i class="icon icon_map"></i><span>Mapa</span></a></li> 
-                    <!-- <li class="whitespace"><span></span></li>
 					
-					<li class="whitespace">INFORMAÇÕES BÁSICAS</li>-->
-					<li><a class="a-virada" href="<?php bloginfo( 'url' ); ?>/a-jornada" title="A Jornada"><span>Jornada 2017</span></a></li>
-					<li><a class="noticias" href="<?php echo get_post_type_archive_link( 'noticias' ); ?>" title="Notícias"><span>Notícias</span></a></li>
-					<li><a class="imprensa" href="<?php bloginfo( 'url' ); ?>/imprensa" title="imprensa"><span>Imprensa</span></a></li>
+					<li><a class="mapa" href="<?php bloginfo( 'url' ); ?>/parceiros/" title="Parceiros"><span>Parceiros</span></a></li>
+                    
+				   <?php if (mostrar_programacao()): ?>
+                    <li><a class="programacao" href="<?php bloginfo( 'url' ); ?>/programacao/" title="Programação"><span>Programação</span></a></li>
+                    <?php endif; ?>
 					
-					
-					<li class="whitespace">PARCEIROS</li>
-
-					<li class="programacao">PROGRAMAÇÃO POR TIPO</li><!--
-					<li class="whitespace">IMÓVEIS</li>
-					<li class="whitespace">MEMÓRIAS EM TRÂNSITO</li>
-					<li class="whitespace">PALESTRAS E OFICINAS</li>
-					<li class="whitespace">APRESENTAÇÕES ARTÍSTICAS</li>
-					<li>EXPOSIÇÕES</li>
-					<li>LANÇAMENTO DE LIVROS</li>
-
-					<li>PROGRAMAÇÃO POR REGIÃO</li>
-					<li>NORTE 1 - JARAGUÁ</li>
-					<li>NORTE 2 - FREGUESIA DO Ó</li>
-					<li>NORTE 3 - SANTANA</li>
-					<li>NORTE 4 - VILA MARIA</li>
-					<li>LESTE 1 - PENHA</li>
-					<li>LESTE 2 - SÃO MIGUEL</li>
-					<li>LESTE 3 - ITAQUERA</li>
-					<li>LESTE 4 - TATUAPÉ</li>
-					<li>LESTE 5 - SAPOPEMBA</li>
-					<li>LESTE 6 - BRÁS-MOOCA</li>
-					<li>CENTRO 1 - SÉ</li>
-					<li>CENTRO 2 - CONSOLAÇÃO</li>
-					<li>CENTRO 3 - BOM RETIRO</li>
-					<li>CENTRO 4 - SANTA CECÍLIA</li>
-					<li>SUL 1 - IPIRANGA</li>
-					<li>SUL 2 - VILA MARIANA</li>
-					<li>SUL 3 - SANTO AMARO</li>
-					<li>SUL 4 - JABAQUARA</li>
-					<li>SUL 5 - CAPÃO REDONDO</li>
-					<li>SUL 6 - PARELHEIROS-MARSILAC</li>
-					<li>OESTE 1 - BUTANTÃ</li>
-					<li>OESTE 2 - VILA SÔNIA</li>
-					<li>OESTE 3 - PINHEIROS</li>
-					<li>OESTE 4 - PERDIZES</li>
-					<li>OESTE 5 - LAPA</li>
-					-->
+					<li><a class="programacao" href="<?php bloginfo( 'url' ); ?>/programacao-por-tipo/" title="Programação por Tipo"><span> - Por tipo</span></a></li>
+					<li><a class="programacao" href="<?php bloginfo( 'url' ); ?>/programacao-por-regiao/" title="Programação por Região"><span> - Por região</span></a></li>					
+                    <li class="whitespace"><span></span></li>
                 </ul>
             </nav>
             <!-- #main-nav -->
